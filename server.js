@@ -45,11 +45,16 @@ app.get('/',(req,res) =>{
 
 });
 
-
-
 app.get('/about', (req,res) => {
     res.render('about.hbs', {
         pageTitle: 'About Page'
+    });
+});
+
+
+app.get('/gmap ', (req,res) => {
+    res.render('gmap.hbs', {
+        pageTitle: 'Google Maps'
     });
 });
 
