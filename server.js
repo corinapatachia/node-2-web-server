@@ -52,9 +52,15 @@ app.get('/about', (req,res) => {
 });
 
 
-app.get('/gmap ', (req,res) => {
+app.get('/gmap', (req,res) => {
     res.render('gmap.hbs', {
-        pageTitle: 'Google Maps'
+        pageTitle: 'Gmap'
+    });
+});
+
+app.get('/projects', (req,res) => { 
+    res.render('projects.hbs', {
+        pageTitle: 'Projects'
     });
 });
 
